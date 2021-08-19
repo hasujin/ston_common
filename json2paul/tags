@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Array	parser.go	/^	Array$/;"	c
+ArrayEach	parser.go	/^func ArrayEach(data []byte, cb func(value []byte, dataType ValueType, offset int, err error), keys ...string) (offset int, err error) {$/;"	f
+Boolean	parser.go	/^	Boolean$/;"	c
+Delete	parser.go	/^func Delete(data []byte, keys ...string) []byte {$/;"	f
+EachKey	parser.go	/^func EachKey(data []byte, cb func(int, []byte, ValueType, error), paths ...[]string) int {$/;"	f
+FuzzDelete	fuzz.go	/^func FuzzDelete(data []byte) int {$/;"	f
+FuzzEachKey	fuzz.go	/^func FuzzEachKey(data []byte) int {$/;"	f
+FuzzGetBoolean	fuzz.go	/^func FuzzGetBoolean(data []byte) int {$/;"	f
+FuzzGetFloat	fuzz.go	/^func FuzzGetFloat(data []byte) int {$/;"	f
+FuzzGetInt	fuzz.go	/^func FuzzGetInt(data []byte) int {$/;"	f
+FuzzGetString	fuzz.go	/^func FuzzGetString(data []byte) int {$/;"	f
+FuzzGetUnsafeString	fuzz.go	/^func FuzzGetUnsafeString(data []byte) int {$/;"	f
+FuzzObjectEach	fuzz.go	/^func FuzzObjectEach(data []byte) int {$/;"	f
+FuzzParseBool	fuzz.go	/^func FuzzParseBool(data []byte) int {$/;"	f
+FuzzParseFloat	fuzz.go	/^func FuzzParseFloat(data []byte) int {$/;"	f
+FuzzParseInt	fuzz.go	/^func FuzzParseInt(data []byte) int {$/;"	f
+FuzzParseString	fuzz.go	/^func FuzzParseString(data []byte) int {$/;"	f
+FuzzSet	fuzz.go	/^func FuzzSet(data []byte) int {$/;"	f
+FuzzTokenStart	fuzz.go	/^func FuzzTokenStart(data []byte) int {$/;"	f
+Get	parser.go	/^func Get(data []byte, keys ...string) (value []byte, dataType ValueType, offset int, err error) {$/;"	f
+GetBoolean	parser.go	/^func GetBoolean(data []byte, keys ...string) (val bool, err error) {$/;"	f
+GetFloat	parser.go	/^func GetFloat(data []byte, keys ...string) (val float64, err error) {$/;"	f
+GetInt	parser.go	/^func GetInt(data []byte, keys ...string) (val int64, err error) {$/;"	f
+GetString	parser.go	/^func GetString(data []byte, keys ...string) (val string, err error) {$/;"	f
+GetUnsafeString	parser.go	/^func GetUnsafeString(data []byte, keys ...string) (val string, err error) {$/;"	f
+KeyPathNotFoundError	parser.go	/^	KeyPathNotFoundError       = errors.New("Key path not found")$/;"	v
+MalformedArrayError	parser.go	/^	MalformedArrayError        = errors.New("Value is array, but can't find closing ']' symbol")$/;"	v
+MalformedJsonError	parser.go	/^	MalformedJsonError         = errors.New("Malformed JSON error")$/;"	v
+MalformedObjectError	parser.go	/^	MalformedObjectError       = errors.New("Value looks like object, but can't find closing '}' symbol")$/;"	v
+MalformedStringError	parser.go	/^	MalformedStringError       = errors.New("Value is string, but can't find closing '\\"' symbol")$/;"	v
+MalformedStringEscapeError	parser.go	/^	MalformedStringEscapeError = errors.New("Encountered an invalid escape sequence in a string")$/;"	v
+MalformedValueError	parser.go	/^	MalformedValueError        = errors.New("Value looks like Number\/Boolean\/None, but can't find its end: ',' or '}' symbol")$/;"	v
+NotExist	parser.go	/^	NotExist = ValueType(iota)$/;"	c
+Null	parser.go	/^	Null$/;"	c
+Number	parser.go	/^	Number$/;"	c
+Object	parser.go	/^	Object$/;"	c
+ObjectEach	parser.go	/^func ObjectEach(data []byte, callback func(key []byte, value []byte, dataType ValueType, offset int) error, keys ...string) (err error) {$/;"	f
+OverflowIntegerError	parser.go	/^	OverflowIntegerError       = errors.New("Value is number, but overflowed while parsing")$/;"	v
+ParseBoolean	parser.go	/^func ParseBoolean(b []byte) (bool, error) {$/;"	f
+ParseFloat	parser.go	/^func ParseFloat(b []byte) (float64, error) {$/;"	f
+ParseInt	parser.go	/^func ParseInt(b []byte) (int64, error) {$/;"	f
+ParseString	parser.go	/^func ParseString(b []byte) (string, error) {$/;"	f
+RejectMessage	cmd/main/main.go	/^type RejectMessage struct {$/;"	t
+ReplyOperation	cmd/main/main.go	/^type ReplyOperation string$/;"	t
+Set	parser.go	/^func Set(data []byte, setValue []byte, keys ...string) (value []byte, err error) {$/;"	f
+String	parser.go	/^	String$/;"	c
+String	parser.go	/^func (vt ValueType) String() string {$/;"	f
+StringToBytes	bytes_safe.go	/^func StringToBytes(s string) []byte {$/;"	f
+StringToBytes	bytes_unsafe.go	/^func StringToBytes(s string) []byte {$/;"	f
+Unescape	escape.go	/^func Unescape(in, out []byte) ([]byte, error) {$/;"	f
+Unknown	parser.go	/^	Unknown$/;"	c
+UnknownValueTypeError	parser.go	/^	UnknownValueTypeError      = errors.New("Unknown value type")$/;"	v
+ValueType	parser.go	/^type ValueType int$/;"	t
+backslashCharEscapeTable	escape.go	/^var backslashCharEscapeTable = [...]byte{$/;"	v
+badHex	escape.go	/^const badHex = -1$/;"	c
+basicMultilingualPlaneOffset	escape.go	/^const basicMultilingualPlaneOffset = 0xFFFF$/;"	c
+basicMultilingualPlaneReservedOffset	escape.go	/^const basicMultilingualPlaneReservedOffset = 0xDFFF$/;"	c
+bitwiseFlags	parser.go	/^var bitwiseFlags []int64$/;"	v
+blockEnd	parser.go	/^func blockEnd(data []byte, openSym byte, closeSym byte) int {$/;"	f
+bytesToString	bytes_safe.go	/^func bytesToString(b *[]byte) string {$/;"	f
+bytesToString	bytes_unsafe.go	/^func bytesToString(b *[]byte) string {$/;"	f
+combineUTF16Surrogates	escape.go	/^func combineUTF16Surrogates(high, low rune) rune {$/;"	f
+createInsertComponent	parser.go	/^func createInsertComponent(keys []string, setValue []byte, comma, object bool) []byte {$/;"	f
+decodeSingleUnicodeEscape	escape.go	/^func decodeSingleUnicodeEscape(in []byte) (rune, bool) {$/;"	f
+decodeUnicodeEscape	escape.go	/^func decodeUnicodeEscape(in []byte) (rune, int) {$/;"	f
+equalStr	bytes_safe.go	/^func equalStr(b *[]byte, s string) bool {$/;"	f
+equalStr	bytes_unsafe.go	/^func equalStr(b *[]byte, s string) bool {$/;"	f
+falseLiteral	parser.go	/^	falseLiteral = []byte("false")$/;"	v
+findKeyStart	parser.go	/^func findKeyStart(data []byte, key string) (int, error) {$/;"	f
+findTokenStart	parser.go	/^func findTokenStart(data []byte, token byte) int {$/;"	f
+getType	parser.go	/^func getType(data []byte, offset int) ([]byte, ValueType, int, error) {$/;"	f
+h2I	escape.go	/^func h2I(c byte) int {$/;"	f
+highSurrogateOffset	escape.go	/^const highSurrogateOffset = 0xD800$/;"	c
+init	parser.go	/^func init() {$/;"	f
+internalGet	parser.go	/^func internalGet(data []byte, keys ...string) (value []byte, dataType ValueType, offset, endOffset int, err error) {$/;"	f
+isUTF16EncodedRune	escape.go	/^func isUTF16EncodedRune(r rune) bool {$/;"	f
+json2paul	bytes.go	/^package json2paul$/;"	p
+json2paul	bytes_safe.go	/^package json2paul$/;"	p
+json2paul	bytes_unsafe.go	/^package json2paul$/;"	p
+json2paul	escape.go	/^package json2paul$/;"	p
+json2paul	fuzz.go	/^package json2paul$/;"	p
+json2paul	parser.go	/^package json2paul$/;"	p
+lastToken	parser.go	/^func lastToken(data []byte) int {$/;"	f
+lowSurrogateOffset	escape.go	/^const lowSurrogateOffset = 0xDC00$/;"	c
+main	cmd/main/main.go	/^func main() {$/;"	f
+main	cmd/main/main.go	/^package main$/;"	p
+minInt64	bytes.go	/^const minInt64 = `9223372036854775808`$/;"	c
+nextToken	parser.go	/^func nextToken(data []byte) int {$/;"	f
+nullLiteral	parser.go	/^	nullLiteral  = []byte("null")$/;"	v
+parseFloat	bytes_safe.go	/^func parseFloat(b *[]byte) (float64, error) {$/;"	f
+parseFloat	bytes_unsafe.go	/^func parseFloat(b *[]byte) (float64, error) {$/;"	f
+parseInt	bytes.go	/^func parseInt(bytes []byte) (v int64, ok bool, overflow bool) {$/;"	f
+sameTree	parser.go	/^func sameTree(p1, p2 []string) bool {$/;"	f
+searchKeys	parser.go	/^func searchKeys(data []byte, keys ...string) int {$/;"	f
+stringEnd	parser.go	/^func stringEnd(data []byte) (int, bool) {$/;"	f
+supplementalPlanesOffset	escape.go	/^const supplementalPlanesOffset = 0x10000$/;"	c
+tokenEnd	parser.go	/^func tokenEnd(data []byte) int {$/;"	f
+tokenStart	parser.go	/^func tokenStart(data []byte) int {$/;"	f
+trueLiteral	parser.go	/^	trueLiteral  = []byte("true")$/;"	v
+unescapeStackBufSize	parser.go	/^const unescapeStackBufSize = 64$/;"	c
+unescapeToUTF8	escape.go	/^func unescapeToUTF8(in, out []byte) (inLen int, outLen int) {$/;"	f
